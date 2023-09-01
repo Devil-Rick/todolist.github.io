@@ -11,7 +11,7 @@ function getwork() {
     todo.appendChild(todoComp)
 
     var newtask = document.createElement('p');
-    newtask.parentElement.parentElement.setAttribute('class', 'completed')
+    // newtask.parentElement.parentElement.setAttribute('class', 'completed')
 
     newtask.innerHTML = task.value;
 
