@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Todo List</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JS Script -->
+    <script src="https://kit.fontawesome.com/19d695b238.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>To do List</h1>
+    </header>
+
+    <main>
+        <div class="task-main">
+            <div class="form">
+                <i class="fa-regular fa-file-lines"></i>
+                <input id="work" type="text" placeholder="Type your To Do List">
+                <button onclick="getwork()"><i class="fa-solid fa-circle-plus"></i></button>
+            </div>
+            <div class="task-sub">
+                <div class="task-sub-comp">
+                    <i class="fa-solid fa-check"></i>
+                    <p onclick="done()" class="btn-p">Complete all tasks</p>
+                </div>
+                <p class="btn-p" onclick="clearAll()">Clear completed</p>
+            </div>
+            <div id="tasks">
+            </div>
+
+            <div class="task-sub">
+                <div class="task-sub-comp">
+                    <p id="counter">0</p>
+                    <p>Tasks Left</p>
+                </div>
+                <div style="display: flex;">
+                    <p class="btn-p">All</p>
+                    <p class="btn-p">Not completed</p>
+                    <p class="btn-p">Completed</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- <i class="fa-regular fa-circle-xmark"></i> -->
+    <script src="main.js" async defer></script>
+</body>
+
+</html>

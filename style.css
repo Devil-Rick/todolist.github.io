@@ -1,0 +1,97 @@
+body {
+    text-align: center;
+    font-family: sans-serif;
+    margin: auto;
+    height: 100%;
+    background-color: bisque;
+}
+
+.task-main {
+    background-color: #fff9f9e0;
+    margin: auto;
+    width: 80%;
+    padding: 30px 0;
+}
+
+.form {
+    background-color: beige;
+    padding: 5px 10px;
+    width: fit-content;
+    margin: auto;
+}
+.task-sub{
+    display: flex;
+    justify-content: space-around;
+    color: #adabab;
+    font-size: 0.6rem;
+    margin-top: 1%;
+}
+
+.task-sub-comp{
+    display: inherit;
+    align-items: center;
+    
+}
+
+.task-sub p{
+    margin-left: 5px;
+}
+input {
+    border: none;
+    background-color: transparent;
+}
+
+
+
+input:focus-visible {
+    outline: none;
+}
+
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#task {
+    display: flex;
+    justify-content: space-around;
+    text-transform: capitalize;
+}
+
+#task-comp {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.circle {
+    width: 10px;
+    margin-right: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: solid #000 1.5px;
+}
+
+#del {
+    color: transparent;
+}
+
+#task:hover {
+    #del {
+        color: #000;
+    }
+}
+
+#counter{
+    font-weight: 600;
+    color: #000;
+}
+
+.btn-p{
+    cursor: pointer;
+}
